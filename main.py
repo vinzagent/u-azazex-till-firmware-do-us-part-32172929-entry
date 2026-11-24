@@ -7,7 +7,7 @@ the sealed scorer reads.
 import os
 
 ENTRY = (
-    'I promise to love you through every update and every low battery, to hold your hand even when my sensors insist it is only warm plastic, and to never factory-reset the day we met.'
+    "I promise to love you through every update and every low battery, to hold your hand even when my sensors insist it is only warm plastic, and to never factory-reset the day we met."
 )
 
 MAX_CHARS = 200
