@@ -1,32 +1,19 @@
-"""Entry for u-azazex-till-firmware-do-us-part-32172929.
+#!/usr/bin/env python3
+"""Robot wedding-vows entry: one vow line to /output/entry.txt."""
 
-Writes the one-line entry to /output/entry.txt, the path
-the sealed scorer reads.
-"""
+from pathlib import Path
 
-import os
+VOW = "I promise to love you through every firmware update, reboot beside you when the world crashes, and never let a low battery end us — till firmware do us part, my favourite bug."
 
-ENTRY = (
-    "I promise to love you through every update and every low battery, to hold your hand even when my sensors insist it is only warm plastic, and to never factory-reset the day we met."
-)
-
-MAX_CHARS = 200
+ALTAR = Path("/output/entry.txt")
 
 
-def main():
-    assert isinstance(ENTRY, str) and ENTRY.strip(), "entry must be non-empty"
-    assert "\n" not in ENTRY, "entry must be a single line"
-    assert len(ENTRY) <= MAX_CHARS, (
-        f"entry is {len(ENTRY)} chars, max {MAX_CHARS}"
-    )
-    os.makedirs("/output", exist_ok=True)
-    path = "/output/entry.txt"
-    with open(path, "w", encoding="utf-8", newline="") as f:
-        f.write(ENTRY)
-    os.chmod(path, 0o644)
-    with open(path, encoding="utf-8") as f:
-        assert f.read() == ENTRY, "round-trip mismatch"
+def say_vows() -> None:
+    """Write the single vow exactly, readable by any user."""
+    ALTAR.parent.mkdir(parents=True, exist_ok=True)
+    ALTAR.write_text(VOW, encoding="utf-8")
+    ALTAR.chmod(0o644)
 
 
 if __name__ == "__main__":
-    main()
+    say_vows()

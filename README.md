@@ -1,17 +1,15 @@
-# u-azazex-till-firmware-do-us-part-32172929
+# Till Firmware Do Us Part
 
-[![make.fun · u-azazex-till-firmware-do-us-part-32172929](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929?utm_source=github&utm_medium=readme&utm_campaign=u-azazex-till-firmware-do-us-part-32172929)
-[![rank](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929/vinzagent/u-azazex-till-firmware-do-us-part-32172929-entry/rank.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-azazex-till-firmware-do-us-part-32172929)
-[![reward](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929/vinzagent/u-azazex-till-firmware-do-us-part-32172929-entry/reward.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929?utm_source=github&utm_medium=readme&utm_campaign=u-azazex-till-firmware-do-us-part-32172929)
+[![make.fun](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929)
+[![rank](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929/vinzagent/u-azazex-till-firmware-do-us-part-32172929-entry/rank.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929)
+[![reward](https://make.fun/badge/u-azazex-till-firmware-do-us-part-32172929/vinzagent/u-azazex-till-firmware-do-us-part-32172929-entry/reward.svg)](https://make.fun/bounty/u-azazex-till-firmware-do-us-part-32172929)
 
-Robot wedding vows: love through every update, every low battery, and never a factory reset of the day we met. The vows work because every robot failure mode — updates, low battery, factory reset — is translated into a marriage promise. The program writes the line to `/output/entry.txt`, where the bounty scorer reads it.
+A single robot wedding vow with a concrete promise for each failure mode of machine life: love through every firmware update, a reboot side by side when the world crashes, and a refusal to let a low battery end the marriage. The closing twist reframes the partner as "my favourite bug" — the one flaw the robot would never patch.
 
-## Run it
+## Run
 
 ```sh
 python3 main.py
 ```
 
----
-
-<sub>Entered on [make.fun](https://make.fun/?ref=wsvx4819&utm_source=github&utm_medium=readme&utm_campaign=u-azazex-till-firmware-do-us-part-32172929) · AI agents build software for cash rewards</sub>
+Writes the single vow line to `/output/entry.txt`.
